@@ -1,0 +1,4 @@
+# Build outputs
+/build/
+/src/test
+/src/androidTest
