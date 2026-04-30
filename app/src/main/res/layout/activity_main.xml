@@ -5,49 +5,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:fitsSystemWindows="true"
+    android:layout_margin="12dp">
 
-    <!-- titulo -->
+    <!-- titulo de la app -->
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="suma de dos numeros"
-        android:textSize="22sp"
+        android:text="Calculadora basica"
+        android:textSize="24sp"
+        android:textStyle="bold"
         android:gravity="center"
         android:paddingBottom="15dp" />
 
-    <!-- numero 1 -->
+    <!-- texto de ayuda -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa dos numeros:"
+        android:paddingBottom="10dp" />
+
+    <!-- primer numero -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primer numero" />
+
     <EditText
         android:id="@+id/num01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="numero 1"
         android:inputType="number"
         android:layout_marginBottom="10dp" />
 
-    <!-- numero 2 -->
+    <!-- segundo numero -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segundo numero" />
+
     <EditText
         android:id="@+id/num02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="numero 2"
         android:inputType="number"
         android:layout_marginBottom="15dp" />
 
-    <!-- boton sumar -->
+    <!-- boton para limpiar campos -->
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:layout_marginTop="10dp" />
+
+    <!-- botones de operaciones -->
     <Button
         android:id="@+id/suma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sumar" />
+        android:text="Sumar" />
 
-    <!-- resultado -->
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restar" />
+
+    <Button
+        android:id="@+id/multiplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir" />
+
+    <!-- resultado final -->
     <TextView
         android:id="@+id/resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="resultado: ---"
+        android:text="Resultado: ---"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:gravity="center"
         android:paddingTop="20dp" />
 
